@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Rakhi Mam — A Special Birthday</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=Playfair+Display:ital@0;1&display=swap');
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#09070a;color:#f6eee9;font-family:Inter,sans-serif}
+body:before{content:"";position:fixed;inset:14px;border:1px solid #d5a77f2b;border-radius:28px;pointer-events:none;z-index:50}
+
+/* Countdown */
+#intro{
+ height:100vh;display:flex;align-items:center;justify-content:center;
+ background:radial-gradient(circle,#281a21 0,#09070a 65%);
+ text-align:center;position:relative;overflow:hidden;
+}
+.countbox{position:relative;z-index:2}
+.countlabel{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:#cfa27f;margin-bottom:28px}
+.count{
+ font:500 145px/.8 "Cormorant Garamond",serif;color:#f1d5be;
+ text-shadow:0 0 55px #d5a77f66;
+}
+.countsub{font:italic 18px "Playfair Display",serif;color:#a88789;margin-top:25px}
+.introstar{position:absolute;color:#cfa27f66;font-size:12px;animation:twinkle 2s infinite alternate}
+@keyframes twinkle{to{opacity:1;transform:scale(1.5)}}
+#openBtn{
+ margin-top:28px;padding:15px 28px;border-radius:999px;
+ border:1px solid #d5a77f66;background:linear-gradient(135deg,#8d5669,#a36f60);
+ color:#fff;font-size:10px;letter-spacing:2px;cursor:pointer;
+ box-shadow:0 12px 35px #8d566955;
+}
+#openBtn:active{transform:scale(.96)}
+
+
+/* Main */
+.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:75px 20px;position:relative;overflow:hidden}
+.glow{position:absolute;width:300px;height:300px;border-radius:50%;background:#8c526522;filter:blur(70px)}
+.card{
+ width:min(100%,500px);padding:45px 29px;text-align:center;position:relative;
+ background:linear-gradient(145deg,#ffffff0d,#ffffff03);
+ border:1px solid #d5a77f2e;border-radius:34px;
+ box-shadow:0 30px 100px #00000080,inset 0 1px #ffffff12;
+ backdrop-filter:blur(18px);
+}
+.eyebrow{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:#d5a77f}
+.orn{color:#d5a77f;letter-spacing:8px;margin:17px 0}
+h1{font:500 65px/.86 "Cormorant Garamond",serif;margin:0;background:linear-gradient(120deg,#fff,#e5bea0,#fff);-webkit-background-clip:text;color:transparent}
+h2{font:500 48px/1 "Cormorant Garamond",serif;margin:0;color:#f3e1d7}
+.name{font:italic 30px "Playfair Display",serif;color:#c98f91;margin-top:16px}
+.line{width:75px;height:1px;background:#d5a77f66;margin:27px auto}
+.lead{font:22px/1.45 "Cormorant Garamond",serif;color:#e7d7cf}
+.text{font-size:14px;line-height:1.95;color:#b8aaa5;font-weight:300}
+.quote{margin:26px 0;padding:22px 14px;border-top:1px solid #d5a77f44;border-bottom:1px solid #d5a77f44;font:italic 21px/1.45 "Cormorant Garamond",serif;color:#ddc5b8}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:26px 0}
+.tile{padding:17px 4px;border:1px solid #d5a77f20;border-radius:18px;background:#fff5ec08}
+.tile b{display:block;font:600 21px "Cormorant Garamond",serif;color:#e6cec1}
+.tile span{font-size:9px;color:#958580}
+.cake{font-size:70px;margin:20px;animation:breathe 2.4s infinite}
+.signature{font:italic 17px "Playfair Display",serif;color:#c98f91;margin-top:22px}
+.petal{position:fixed;top:-25px;color:#c98f91;opacity:.5;z-index:5;animation:fall 11s linear infinite;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(600deg);opacity:0}}
+@keyframes breathe{50%{transform:scale(1.08)}}
+.reveal{animation:show 1.2s ease}
+@keyframes show{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- VISIBLE 3-2-1 INTRO -->
+<section id="intro">
+  <div class="countbox">
+    <div class="countlabel">A little surprise is waiting</div>
+    <div id="startScreen">
+      <div class="count">♡</div>
+      <div class="countsub">Something special is waiting for you...</div>
+      <button id="openBtn">TAP TO OPEN ✦</button>
+    </div>
+    <div id="countScreen" style="display:none">
+      <div class="count" id="count">2</div>
+      <div class="countsub">Get ready ✦</div>
+    </div>
+  </div>
+  <span class="introstar" style="left:12%;top:18%">✦</span>
+  <span class="introstar" style="left:82%;top:24%;animation-delay:.5s">✧</span>
+  <span class="introstar" style="left:24%;top:78%;animation-delay:1s">✦</span>
+  <span class="introstar" style="left:75%;top:75%;animation-delay:1.5s">❀</span>
+</section>
+
+<!-- Page 1 -->
+<section class="page" id="p1">
+<div class="glow"></div>
+<div class="card reveal">
+<div class="eyebrow">A message meant to feel different</div>
+<div class="orn">✦　♡　✦</div>
+<h1>Happy<br>Birthday</h1>
+<div class="name">Rakhi Mam</div>
+<div class="line"></div>
+<p class="lead">Among hundreds of wishes, some are simply sent… and some are written with thought.</p>
+<p class="text" style="margin-top:20px">This little page is one of those wishes — made with genuine respect, warmth and a simple hope that it brings a smile to your face.</p>
+<div class="cake">🌸</div>
+</div>
+</section>
+
+<!-- Page 2 -->
+<section class="page">
+<div class="glow"></div>
+<div class="card reveal">
+<div class="eyebrow">A heartfelt note</div>
+<div class="orn">❀　✦　❀</div>
+<h2>For You, Mam 🤍</h2>
+<div class="line"></div>
+<p class="text">Wishing you a peaceful year ahead filled with good health, positivity, and beautiful moments. You handle everything with strength and patience, but lately, I feel you've been thinking and worrying more than you should.</p>
+<div class="quote">“I genuinely hope you worry less, give yourself more time to breathe, and enjoy the little things that make you happy.”</div>
+<p class="text">Sometimes, protecting your peace matters more than finding every answer.</p>
+<div class="tiles">
+<div class="tile"><b>Peace</b><span>for your mind</span></div>
+<div class="tile"><b>Clarity</b><span>for your path</span></div>
+<div class="tile"><b>Joy</b><span>for your heart</span></div>
+</div>
+</div>
+</section>
+
+<!-- Page 3 -->
+<section class="page">
+<div class="glow"></div>
+<div class="card reveal">
+<div class="eyebrow">One final wish</div>
+<div class="orn">🌷　✦　🌷</div>
+<h2>May this year<br>be kinder to you.</h2>
+<div class="line"></div>
+<p class="lead">May it bring you clarity, peace of mind, and countless reasons to smile.</p>
+<p class="text" style="margin-top:20px">You truly deserve happiness, respect, and a life that feels lighter and more peaceful.</p>
+<p class="text" style="margin-top:16px">Stay blessed, stay strong, and keep smiling. 🌸✨</p>
+<div class="cake">🎂</div>
+<div class="quote">“May the coming days feel softer than the days you've had to be strong.”</div>
+<div class="signature">Happy Birthday, Rakhi Mam. 🤍<br>With warmest wishes & respect.</div>
+</div>
+</section>
+
+<script>
+const intro=document.getElementById("intro");
+const startScreen=document.getElementById("startScreen");
+const countScreen=document.getElementById("countScreen");
+const number=document.getElementById("count");
+const openBtn=document.getElementById("openBtn");
+
+function showNumber(value){
+  number.textContent=value;
+  number.animate(
+    [{transform:"scale(.45)",opacity:0},{transform:"scale(1)",opacity:1}],
+    {duration:350,easing:"ease-out"}
+  );
+}
+
+openBtn.addEventListener("click",()=>{
+  startScreen.style.display="none";
+  countScreen.style.display="block";
+
+  showNumber("2");
+  setTimeout(()=>showNumber("1"),1000);
+  setTimeout(()=>{number.textContent="✦"},2000);
+
+  setTimeout(()=>{
+    intro.style.transition="opacity 1s ease";
+    intro.style.opacity="0";
+    setTimeout(()=>{
+      intro.style.display="none";
+      window.scrollTo(0,0);
+    },1000);
+  },2350);
+});
+
+/* Floating petals */
+const symbols=["✦","❀","♡","✧","🌸"];
+for(let i=0;i<18;i++){
+ const x=document.createElement("div");
+ x.className="petal";
+ x.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+ x.style.left=Math.random()*100+"vw";
+ x.style.animationDuration=(8+Math.random()*7)+"s";
+ x.style.animationDelay=Math.random()*6+"s";
+ document.body.appendChild(x);
+}
+</script>
+</body>
+</html>
